@@ -5,8 +5,8 @@ defmodule CheeringMascotTest do
   import Mock
 
   test "calls for user input" do
-  	with_mock CheeringMascot, [call_out_cheer: fn() -> "f\n" end] do
-  		assert CheeringMascot.call_out_cheer == "f\n"
+  	with_mock CheeringMascot, [call_out_cheer: fn() -> "f" end] do
+  		assert CheeringMascot.call_out_cheer == "f"
   	end
   end
 end
